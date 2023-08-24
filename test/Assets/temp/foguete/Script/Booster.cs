@@ -2,34 +2,21 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+[RequireComponent(typeof(Rigidbody))]
 public class Booster : MonoBehaviour
 {
     private const  float gravity = -9.8f;
 
     private float rocketAngle = 0.0F;
     private float rotationY = 0.0F;
-    private float planeAngle = 30.0f;
 
     private float componentX;
     private float componentY;
-    private float componentZ;
 
     public float speed = 2.0f;
-
-    private float tg;
-
-    private float mSin;
-    private float mCos;
-
-
-    private float spaceX;
-    private float spaceY;
-
-    private float ModuleSpaceX;
-    private float ModuleSpaceY;
-
-    private float deltaTime;
     private float time = 0.0f;
+
+    public bool aciveThrusters = true;
 
     private Rigidbody rigidBody;
     void Start()
@@ -47,18 +34,21 @@ public class Booster : MonoBehaviour
 
     void Update()
     {
-        time += Time.deltaTime;
+        if (aciveThrusters)
+        {
+            time += Time.deltaTime;
 
 
-        float higth = componentY * time + gravity * Mathf.Pow(time, 2.0f) / 2.0f;
-        float distance = componentX * time;
+            float higth = componentY * time + gravity * Mathf.Pow(time, 2.0f) / 2.0f;
+            float distance = componentX * time;
 
-        Vector3 v = new Vector3(distance, higth, 0.0f);
+            Vector3 v = new Vector3(distance, higth, 0.0f);
 
-        Quaternion rotation = Quaternion.AngleAxis(rotationY, Vector3.up);
+            Quaternion rotation = Quaternion.AngleAxis(rotationY, Vector3.up);
 
-        rigidBody.velocity = rotation * v;
+            rigidBody.velocity = rotation * v;
 
-        transform.up = rigidBody.velocity.normalized;
+            transform.up = rigidBody.velocity.normalized;
+        }
     }
 }
