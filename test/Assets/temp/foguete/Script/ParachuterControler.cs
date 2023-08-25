@@ -34,7 +34,7 @@ public class ParachuterControler : MonoBehaviour
         if (parachuter.activeInHierarchy)
         {
             Quaternion up = Quaternion.Euler(Vector3.up);
-            transform.rotation = Quaternion.RotateTowards(transform.rotation, up, verticalAlignmentSpeed * Time.deltaTime);
+            rigidbody.rotation = Quaternion.RotateTowards(transform.rotation, up, verticalAlignmentSpeed * Time.deltaTime);
         }
     }
     private void ParachuterPreparate() {
@@ -49,7 +49,7 @@ public class ParachuterControler : MonoBehaviour
     private void OnCollisionEnter(Collision collision)
     {
         if (collision.gameObject.CompareTag("onFloor")) {
-            rigidbody.drag = 0.0f;
+            rigidbody.drag = 0.1f;
         }
     }
 }

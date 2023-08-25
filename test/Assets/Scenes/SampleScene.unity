@@ -382,7 +382,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   time: 0
   aciveThrusters: 1
-  speed: 10
+  speed: 14
   fuel: 30
   endLife:
     m_PersistentCalls:
@@ -680,7 +680,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   time: 0
   aciveThrusters: 0
-  speed: 5
+  speed: 2
   fuel: 20
   endLife:
     m_PersistentCalls:
@@ -743,8 +743,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   parachuter: {fileID: 361425311}
   parashuterBag: {fileID: 1211892202}
-  resitence: 0.1
-  verticalAlignmentSpeed: 5
+  resitence: 10
+  verticalAlignmentSpeed: 50
 --- !u!1 &1211892201
 GameObject:
   m_ObjectHideFlags: 0
