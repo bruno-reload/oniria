@@ -94,7 +94,6 @@ public class Booster : MonoBehaviour
     private void ToDiscard() {
         couple = false;
         rigidBody.useGravity = true;
-        Debug.Log(rigidBody.velocity);
         aciveThrusters = false;
     }
 
