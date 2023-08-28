@@ -1,0 +1,19 @@
+
+
+Ola, segue aqui alguns links para analise.
+
+github - https://github.com/bruno-reload/oniria.git
+drive - https://drive.google.com/file/d/19G5TtNRHHM0k8C7TzrWS6WlTqtpUn3_-/view?usp=sharing
+
+
+Obs. 
+	Utilize a inclinação do gameobject Rocket no eixo local Z, nele será possível aumentar a inclinação em referência com o plano inclinado, o eixo local Y permite rotacionar sobre a superfície XZ.
+Ambos os módulos recebem parte do combustível total (5), sendo o primeiro com 2 e o segundo com 3. Ou se preferir usar os eixos de rotação do transform y e z apontando para a direção que o foguete deve subir.
+	A velocidade do primeiro módulo é transferida para o segundo módulo, mantendo assim sua velocidade, naquele ponto,  sem perdas.
+	A força externa (vento) é introduzida no decorrer do trajeto.
+
+Agradesço a oprtunidade
+
+
+att,
+Bruno Correia da Silva

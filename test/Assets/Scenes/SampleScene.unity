@@ -3021,6 +3021,17 @@ WindZone:
   m_WindTurbulence: 0.01
   m_WindPulseMagnitude: 0.5
   m_WindPulseFrequency: 1
+--- !u!114 &1769284824 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1898480028506781025, guid: 4cf4adb452ad29740b10b3d2c823dd21, type: 3}
+  m_PrefabInstance: {fileID: 1898480029057779099}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1769284822}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f1e574b2c1a01704f84cb861306db36f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1776682432
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3466,31 +3477,31 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1898480028506781024, guid: 4cf4adb452ad29740b10b3d2c823dd21, type: 3}
       propertyPath: m_LocalRotation.w
-      value: -0.24622193
+      value: 0.26337317
       objectReference: {fileID: 0}
     - target: {fileID: 1898480028506781024, guid: 4cf4adb452ad29740b10b3d2c823dd21, type: 3}
       propertyPath: m_LocalRotation.x
-      value: -0.14767566
+      value: -0.82314694
       objectReference: {fileID: 0}
     - target: {fileID: 1898480028506781024, guid: 4cf4adb452ad29740b10b3d2c823dd21, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0.6887484
+      value: 0.26581383
       objectReference: {fileID: 0}
     - target: {fileID: 1898480028506781024, guid: 4cf4adb452ad29740b10b3d2c823dd21, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0.6657269
+      value: -0.427091
       objectReference: {fileID: 0}
     - target: {fileID: 1898480028506781024, guid: 4cf4adb452ad29740b10b3d2c823dd21, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
-      value: -57.599
+      value: -11.919
       objectReference: {fileID: 0}
     - target: {fileID: 1898480028506781024, guid: 4cf4adb452ad29740b10b3d2c823dd21, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: -809.184
+      value: -239.509
       objectReference: {fileID: 0}
     - target: {fileID: 1898480028506781024, guid: 4cf4adb452ad29740b10b3d2c823dd21, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
-      value: 277.50598
+      value: 222.623
       objectReference: {fileID: 0}
     - target: {fileID: 1898480028506781025, guid: 4cf4adb452ad29740b10b3d2c823dd21, type: 3}
       propertyPath: windVelocity
@@ -3503,6 +3514,10 @@ PrefabInstance:
     - target: {fileID: 1898480028506781026, guid: 4cf4adb452ad29740b10b3d2c823dd21, type: 3}
       propertyPath: m_Name
       value: Wind
+      objectReference: {fileID: 0}
+    - target: {fileID: 1898480028506781026, guid: 4cf4adb452ad29740b10b3d2c823dd21, type: 3}
+      propertyPath: m_TagString
+      value: onFloor
       objectReference: {fileID: 0}
     - target: {fileID: 1898480030564084406, guid: 4cf4adb452ad29740b10b3d2c823dd21, type: 3}
       propertyPath: m_Enabled
@@ -3529,6 +3544,38 @@ PrefabInstance:
       propertyPath: fuel
       value: 3
       objectReference: {fileID: 0}
+    - target: {fileID: 5055278685204611882, guid: 7cfd4cfd1eef4ab4fb7ceee2d7add21e, type: 3}
+      propertyPath: thrust.m_PersistentCalls.m_Calls.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 5055278685204611882, guid: 7cfd4cfd1eef4ab4fb7ceee2d7add21e, type: 3}
+      propertyPath: thrust.m_PersistentCalls.m_Calls.Array.data[2].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5055278685204611882, guid: 7cfd4cfd1eef4ab4fb7ceee2d7add21e, type: 3}
+      propertyPath: thrust.m_PersistentCalls.m_Calls.Array.data[2].m_Target
+      value: 
+      objectReference: {fileID: 1769284824}
+    - target: {fileID: 5055278685204611882, guid: 7cfd4cfd1eef4ab4fb7ceee2d7add21e, type: 3}
+      propertyPath: thrust.m_PersistentCalls.m_Calls.Array.data[2].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5055278685204611882, guid: 7cfd4cfd1eef4ab4fb7ceee2d7add21e, type: 3}
+      propertyPath: thrust.m_PersistentCalls.m_Calls.Array.data[2].m_MethodName
+      value: RestTime
+      objectReference: {fileID: 0}
+    - target: {fileID: 5055278685204611882, guid: 7cfd4cfd1eef4ab4fb7ceee2d7add21e, type: 3}
+      propertyPath: thrust.m_PersistentCalls.m_Calls.Array.data[2].m_TargetAssemblyTypeName
+      value: Wind, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 5055278685204611882, guid: 7cfd4cfd1eef4ab4fb7ceee2d7add21e, type: 3}
+      propertyPath: thrust.m_PersistentCalls.m_Calls.Array.data[2].m_Arguments.m_BoolArgument
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5055278685204611882, guid: 7cfd4cfd1eef4ab4fb7ceee2d7add21e, type: 3}
+      propertyPath: thrust.m_PersistentCalls.m_Calls.Array.data[2].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 5055278685852301787, guid: 7cfd4cfd1eef4ab4fb7ceee2d7add21e, type: 3}
       propertyPath: initialRotation.w
       value: -1.8
@@ -3544,6 +3591,38 @@ PrefabInstance:
     - target: {fileID: 5055278685852301787, guid: 7cfd4cfd1eef4ab4fb7ceee2d7add21e, type: 3}
       propertyPath: initialRotation.z
       value: -2.22
+      objectReference: {fileID: 0}
+    - target: {fileID: 5055278685852301787, guid: 7cfd4cfd1eef4ab4fb7ceee2d7add21e, type: 3}
+      propertyPath: thrust.m_PersistentCalls.m_Calls.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 5055278685852301787, guid: 7cfd4cfd1eef4ab4fb7ceee2d7add21e, type: 3}
+      propertyPath: thrust.m_PersistentCalls.m_Calls.Array.data[2].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5055278685852301787, guid: 7cfd4cfd1eef4ab4fb7ceee2d7add21e, type: 3}
+      propertyPath: thrust.m_PersistentCalls.m_Calls.Array.data[2].m_Target
+      value: 
+      objectReference: {fileID: 1769284824}
+    - target: {fileID: 5055278685852301787, guid: 7cfd4cfd1eef4ab4fb7ceee2d7add21e, type: 3}
+      propertyPath: thrust.m_PersistentCalls.m_Calls.Array.data[2].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5055278685852301787, guid: 7cfd4cfd1eef4ab4fb7ceee2d7add21e, type: 3}
+      propertyPath: thrust.m_PersistentCalls.m_Calls.Array.data[2].m_MethodName
+      value: RestTime
+      objectReference: {fileID: 0}
+    - target: {fileID: 5055278685852301787, guid: 7cfd4cfd1eef4ab4fb7ceee2d7add21e, type: 3}
+      propertyPath: thrust.m_PersistentCalls.m_Calls.Array.data[2].m_TargetAssemblyTypeName
+      value: Wind, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 5055278685852301787, guid: 7cfd4cfd1eef4ab4fb7ceee2d7add21e, type: 3}
+      propertyPath: thrust.m_PersistentCalls.m_Calls.Array.data[2].m_Arguments.m_BoolArgument
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5055278685852301787, guid: 7cfd4cfd1eef4ab4fb7ceee2d7add21e, type: 3}
+      propertyPath: thrust.m_PersistentCalls.m_Calls.Array.data[2].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 5055278685852301788, guid: 7cfd4cfd1eef4ab4fb7ceee2d7add21e, type: 3}
       propertyPath: m_LocalRotation.w
@@ -3587,31 +3666,31 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5055278686536231946, guid: 7cfd4cfd1eef4ab4fb7ceee2d7add21e, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.90631527
+      value: 0.93877876
       objectReference: {fileID: 0}
     - target: {fileID: 5055278686536231946, guid: 7cfd4cfd1eef4ab4fb7ceee2d7add21e, type: 3}
       propertyPath: m_LocalRotation.x
-      value: -0.044569846
+      value: -0.022324607
       objectReference: {fileID: 0}
     - target: {fileID: 5055278686536231946, guid: 7cfd4cfd1eef4ab4fb7ceee2d7add21e, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0.37281945
+      value: 0.33816433
       objectReference: {fileID: 0}
     - target: {fileID: 5055278686536231946, guid: 7cfd4cfd1eef4ab4fb7ceee2d7add21e, type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0.1939379
+      value: -0.06197557
       objectReference: {fileID: 0}
     - target: {fileID: 5055278686536231946, guid: 7cfd4cfd1eef4ab4fb7ceee2d7add21e, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
-      value: 3.659
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5055278686536231946, guid: 7cfd4cfd1eef4ab4fb7ceee2d7add21e, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: 43.986
+      value: 39.62
       objectReference: {fileID: 0}
     - target: {fileID: 5055278686536231946, guid: 7cfd4cfd1eef4ab4fb7ceee2d7add21e, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
-      value: -22.678
+      value: -7.554
       objectReference: {fileID: 0}
     - target: {fileID: 5055278686536231950, guid: 7cfd4cfd1eef4ab4fb7ceee2d7add21e, type: 3}
       propertyPath: m_Icon

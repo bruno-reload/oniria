@@ -87,8 +87,8 @@ public class Booster : MonoBehaviour
         return false;
     }
     public void ActiveThruster() {
-        PrepareteRocket();
         aciveThrusters = true;
+        PrepareteRocket();
         thrust.Invoke();
     }
   
@@ -120,11 +120,11 @@ public class Booster : MonoBehaviour
     private void OnCollisionEnter(Collision collision)
     {
         if (collision.gameObject.CompareTag("onFloor")) {
-            ToDiscard();
             if (aciveThrusters)
             {
                 discart.Invoke();
             }
+            ToDiscard();
         }
     }
 }
